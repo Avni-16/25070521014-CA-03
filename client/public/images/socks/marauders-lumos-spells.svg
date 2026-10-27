@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="100%" height="100%">
+  <defs>
+    <!-- Background studio vignette -->
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#24211D"/>
+      <stop offset="60%" stop-color="#141311"/>
+      <stop offset="100%" stop-color="#0A0A09"/>
+    </radialGradient>
+
+    <!-- Luxury shadow under socks -->
+    <filter id="sockShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <!-- Ribbed knit texture overlay -->
+    <pattern id="knitRib" width="6" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="rgba(255,255,255,0.05)" stroke-width="1.5"/>
+      <line x1="3" y1="0" x2="3" y2="6" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"/>
+    </pattern>
+
+    <!-- Sock body gradients -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="35%" stop-color="#242429"/>
+      <stop offset="70%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0A0A09"/>
+    </linearGradient>
+
+    <linearGradient id="heelToeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C6A77A"/>
+      <stop offset="100%" stop-color="#181512"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="400" height="520" fill="url(#bgGlow)"/>
+
+  <!-- Subtle Studio Spotlight Grid / Floor Line -->
+  <ellipse cx="200" cy="460" rx="140" ry="24" fill="rgba(0,0,0,0.6)" filter="blur(8px)"/>
+
+  <!-- Main Sock Group (Left Pair angled editorial view) -->
+  <g filter="url(#sockShadow)" transform="translate(18, 10)">
+    <!-- Sock Body Path: Classic Leg & Foot Silhouette -->
+    <!-- Leg section -->
+    <path d="
+      M 160 180
+      L 225 180
+      Q 230 220 228 380
+      C 230 430 280 380 295 400
+      C 305 415 300 440 270 448
+      C 220 460 180 435 155 385
+      L 155 210
+      Z
+    " fill="url(#bodyGrad)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+    <!-- Knit Rib texture fill -->
+    <path d="
+      M 160 180
+      L 225 180
+      Q 230 220 228 380
+      C 230 430 280 380 295 400
+      C 305 415 300 440 270 448
+      C 220 460 180 435 155 385
+      L 155 210
+      Z
+    " fill="url(#knitRib)"/>
+
+    <!-- Ribbed Elastic Cuff -->
+    <rect x="159" y="180" width="67" height="24" rx="3" fill="#C6A77A"/>
+    <!-- Cuff Stripe lines -->
+    <line x1="159" y1="186" x2="226" y2="186" stroke="#242429" stroke-width="2"/>
+    <line x1="159" y1="192" x2="226" y2="192" stroke="#141416" stroke-width="1.5"/>
+    <line x1="159" y1="198" x2="226" y2="198" stroke="#242429" stroke-width="2"/>
+
+    <!-- Reinforced Heel Cap -->
+    <path d="
+      M 155 365
+      C 150 405 180 435 210 430
+      C 185 415 170 385 168 360
+      Z
+    " fill="url(#heelToeGrad)"/>
+
+    <!-- Reinforced Toe Cap -->
+    <path d="
+      M 285 390
+      C 305 405 305 435 275 448
+      C 265 425 272 405 285 390
+      Z
+    " fill="url(#heelToeGrad)"/>
+
+    <!-- Thematic Insignia / Artwork placement on Leg -->
+    <g transform="translate(192, 260)">
+      
+      <!-- Deathly Hallows & Wand -->
+      <polygon points="0,-18 16,14 -16,14" fill="none" stroke="#C6A77A" stroke-width="2"/>
+      <circle cx="0" cy="4" r="9" fill="none" stroke="#C6A77A" stroke-width="2"/>
+      <line x1="0" y1="-20" x2="0" y2="15" stroke="#C6A77A" stroke-width="2"/>
+      <!-- Sparkles -->
+      <circle cx="-12" cy="-8" r="1.5" fill="#E8D5B5"/>
+      <circle cx="12" cy="-8" r="1.5" fill="#E8D5B5"/>
+    
+    </g>
+  </g>
+
+  <!-- Editorial Metadata Badges in Frame -->
+  <g transform="translate(24, 34)">
+    <rect width="90" height="20" rx="2" fill="rgba(16,16,15,0.85)" stroke="rgba(198,167,122,0.4)" stroke-width="1"/>
+    <text x="45" y="14" fill="#C6A77A" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" text-anchor="middle">
+      100% SOCKS
+    </text>
+  </g>
+
+  <g transform="translate(376, 34)" text-anchor="end">
+    <text x="0" y="14" fill="#80766B" font-family="'Inter', sans-serif" font-size="9" letter-spacing="1">
+      CREW
+    </text>
+  </g>
+
+  <!-- Bottom Brand Watermark -->
+  <text x="200" y="495" fill="rgba(245,240,232,0.3)" font-family="'Cormorant Garamond', Georgia, serif" font-size="13" font-style="italic" letter-spacing="3" text-anchor="middle">
+    SOCKTALES ATELIER • MILANO
+  </text>
+</svg>

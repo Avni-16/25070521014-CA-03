@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <radialGradient id="heroGlow" cx="45%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#26221D"/>
+      <stop offset="55%" stop-color="#121110"/>
+      <stop offset="100%" stop-color="#080807"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#heroGlow)"/>
+
+  <!-- Atelier Studio Lighting Lines -->
+  <line x1="0" y1="620" x2="1600" y2="620" stroke="rgba(198,167,122,0.15)" stroke-width="1"/>
+  <ellipse cx="960" cy="650" rx="420" ry="60" fill="rgba(0,0,0,0.6)" filter="blur(16px)"/>
+
+  <!-- Left Artistic Sock Pair (Pop Culture & Cinematic Edition) -->
+  <g transform="translate(820, 220) scale(1.15)">
+    <!-- Sock 1: Marvel Crimson & Gold -->
+    <path d="M 60 40 L 125 40 Q 130 180 128 220 C 130 260 180 300 195 320 C 205 335 200 355 170 365 C 120 375 75 350 55 305 L 55 60 Z" fill="#7A121D" stroke="#C6A77A" stroke-width="2"/>
+    <rect x="59" y="40" width="67" height="24" rx="2" fill="#D4AF37"/>
+    <!-- Arc Reactor -->
+    <circle cx="92" cy="120" r="14" fill="#0C141A" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="92" cy="120" r="6" fill="#4FE3C1" filter="url(#glow)"/>
+  </g>
+
+  <!-- Sock 2: Matrix Green & Jet Black -->
+  <g transform="translate(1020, 180) scale(1.2)">
+    <path d="M 60 40 L 125 40 Q 130 180 128 220 C 130 260 180 300 195 320 C 205 335 200 355 170 365 C 120 375 75 350 55 305 L 55 60 Z" fill="#0C120D" stroke="#00E868" stroke-width="2"/>
+    <rect x="59" y="40" width="67" height="24" rx="2" fill="#00E868"/>
+    <!-- Matrix Glyphs -->
+    <text x="92" y="120" fill="#00E868" font-family="monospace" font-size="12" text-anchor="middle">1 0 1</text>
+    <text x="92" y="140" fill="#75FFAE" font-family="monospace" font-size="10" text-anchor="middle">X 9 Z</text>
+  </g>
+
+  <!-- Sock 3: Harry Potter Gryffindor Scarlet & Gold -->
+  <g transform="translate(680, 260) scale(1.1)">
+    <path d="M 60 40 L 125 40 Q 130 180 128 220 C 130 260 180 300 195 320 C 205 335 200 355 170 365 C 120 375 75 350 55 305 L 55 60 Z" fill="#6B121A" stroke="#D4AF37" stroke-width="1.5"/>
+    <rect x="59" y="40" width="67" height="20" rx="2" fill="#D4AF37"/>
+    <path d="M 82 110 L 102 110 L 102 126 C 102 134 92 140 92 140 C 92 140 82 134 82 126 Z" fill="#181512" stroke="#D4AF37" stroke-width="1.5"/>
+    <text x="92" y="126" fill="#D4AF37" font-family="serif" font-size="11" text-anchor="middle">G</text>
+  </g>
+
+  <!-- Editorial Typography Watermarks -->
+  <text x="140" y="800" fill="rgba(198,167,122,0.4)" font-family="'Inter', sans-serif" font-size="14" letter-spacing="4">
+    HAUTE FOOTWEAR • EXCLUSIVE POP CULTURE &amp; CINEMATIC SOCKS
+  </text>
+</svg>

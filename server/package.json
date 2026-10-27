@@ -1,0 +1,28 @@
+{
+  "name": "socktales-server",
+  "version": "1.0.0",
+  "description": "Socktales E-Commerce Backend using Native Node.js HTTP and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test tests/auth.test.js tests/products.test.js tests/cart-order.test.js",
+    "db:start": "node scripts/start-db.js"
+  },
+  "keywords": [
+    "socktales",
+    "native-http",
+    "mongodb",
+    "ecommerce"
+  ],
+  "author": "25070521014",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.10.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.1.2"
+  }
+}
